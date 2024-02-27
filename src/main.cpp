@@ -146,7 +146,7 @@ void loop() {
   ledcWrite(1,0);
   ledcWrite(2,100);
   unsigned long date = millis();
-  if (date-start>= 10000){
+  if (date-start>= 86400000){
     start = millis();
     appendFile(SPIFFS,"/test.csv","\n");
   } 
